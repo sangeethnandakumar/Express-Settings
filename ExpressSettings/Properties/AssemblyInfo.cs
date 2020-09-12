@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ExpressSettings")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Express settings allows you quick prototyping of applications that relies on fetching configurations from settings file. Express settings is seamless to integrate and requires mearly 1 line to read or write settings. It creates readable intented JSON based settings and can be called from anywhere your application.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Twileloop")]
 [assembly: AssemblyProduct("ExpressSettings")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("2ce84964-1543-40dc-97b8-34ad1ba67bbb")]

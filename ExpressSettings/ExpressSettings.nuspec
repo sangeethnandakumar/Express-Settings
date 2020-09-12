@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Twileloop.ExpressSettings</id>
+    <version>$version$</version>
+    <title>Twileloop.ExpressSettings</title>
+    <authors>Sangeeth Nandakumar</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://raw.githubusercontent.com/sangeethnandakumar/Express-Settings/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sangeethnandakumar/Express-Settings/master/ExpressSettings/settings.png</iconUrl>
+    <description>
+	Express settings allows you quick prototyping of applications that relies on fetching configurations from settings file. Express settings is seamless to integrate and requires merely 1 line to read or write settings. It creates readable intended JSON based settings and can be called from anywhere your application.
+	</description>
+    <releaseNotes>Supports ejecting default instance of settings if no persistence available while read</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Persistent, Settings, settings.json, .NET Framework</tags>
+  </metadata>
+</package>

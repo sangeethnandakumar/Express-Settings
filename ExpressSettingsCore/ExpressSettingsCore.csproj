@@ -2,10 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Twileloop.ExpressSettingsCore</PackageId>
+    <Authors>Sangeeth Nandakumar</Authors>
+    <Company>Twileloop</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/sangeethnandakumar/Express-Settings</PackageProjectUrl>
+    <PackageIcon>settings.png</PackageIcon>
+    <RepositoryUrl>https://github.com/sangeethnandakumar/Express-Settings</RepositoryUrl>
+    <RepositoryType>Open Source</RepositoryType>
+    <PackageTags>.NET Core, Settings, Persistant, settings.json, Read, Write</PackageTags>
+    <Description>ExpressSettingsCore is the .NET Core implementatio of Express Settings. Express settings allows you quick prototyping of applications that relies on fetching configurations from settings file. Express settings is seamless to integrate and requires mearly 1 line to read or write settings. It creates readable intented JSON based settings and can be called from anywhere your application.</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\settings.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
