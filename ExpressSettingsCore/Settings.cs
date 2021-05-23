@@ -6,17 +6,15 @@ namespace ExpressSettingsCore
 {
     public static class Settings<T> where T : new()
     {
-        private readonly static string settingsFile = "settings.json";
-
-        public static T Read()
+        public static T Read(SettingsConfiguration config)
         {
             try
             {
-                if (!File.Exists(settingsFile))
+                if (!File.Exists(config.LookupDirectory + "\\" + config.Filename))
                 {
-                    Write(new T());
+                    Write(new T(), config);
                 }
-                string json = File.ReadAllText(settingsFile);
+                string json = File.ReadAllText(config.LookupDirectory + "\\" + config.Filename);
                 return JsonConvert.DeserializeObject<T>(json);
             }
             catch (Exception)
@@ -25,12 +23,12 @@ namespace ExpressSettingsCore
             }
         }
 
-        public static void Write(T settings)
+        public static void Write(T settings, SettingsConfiguration config)
         {
             try
             {
                 var json = JsonConvert.SerializeObject(settings, Formatting.Indented);
-                File.WriteAllText(settingsFile, json);
+                File.WriteAllText(config.LookupDirectory + "\\" + config.Filename, json);
             }
             catch (Exception)
             {
